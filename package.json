@@ -1,9 +1,10 @@
 {
-	"name": "ENTER PROJECT NAME HERE",
+	"name": "locked-in-locks",
 	"version": "1.0.0",
 	"description": "ENTER DESCRIPTION HERE",
 	"main": "index.js",
 	"module": "main.js",
+	"type": "module",
 	"scripts": {
 		"test": "echo \\\"Error: no test specified\\\" && exit 1",
 		"deploy": "git subtree push --prefix dist origin gh-pages",
@@ -13,25 +14,28 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+ssh://ENTER URL HERE"
+		"url": "git+ssh://git@github.com:tullyd43/locked-in-locks.git"
 	},
 	"author": "David Tully",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/tullyd43/ENTER REPO NAME HERE/issues"
+		"url": "https://github.com/tullyd43/locked-in-locks/issues"
 	},
-	"homepage": "https://github.com/tullyd43/ENTER REPO NAME HERE#readme",
+	"homepage": "https://github.com/tullyd43/locked-in-locks#readme",
 	"dependencies": {
 		"esm": "^3.2.25"
 	},
 	"devDependencies": {
-		"@eslint/js": "^9.22.0",
+		"@eslint/css": "^0.10.0",
+		"@eslint/js": "^9.32.0",
+		"@eslint/json": "^0.13.1",
 		"css-loader": "^7.1.2",
-		"eslint": "^9.22.0",
+		"eslint": "^9.32.0",
 		"file-loader": "^6.2.0",
-		"globals": "^16.0.0",
+		"globals": "^16.3.0",
 		"html-loader": "^5.1.0",
 		"html-webpack-plugin": "^5.6.0",
+		"jsdom": "^26.1.0",
 		"prettier": "3.5.3",
 		"style-loader": "^4.0.0",
 		"webpack": "^5.95.0",
