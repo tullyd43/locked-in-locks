@@ -15,3 +15,7 @@ run npm init @eslint/config
 If using ESM in webpack, make sure to change from module.export to export default in common, prod, and dev. Set type to module in package.json. And import stylesheet into entrypoint js file
 
 git pull origin main updates local repo from up to date github repo
+
+
+
+either install jsdom or update package.json template
