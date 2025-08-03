@@ -16,6 +16,7 @@ If using ESM in webpack, make sure to change from module.export to export defaul
 
 git pull origin main updates local repo from up to date github repo
 
+git fetch downloads latest build and allows inspection of changes before merging with remote main
 
 
 either install jsdom or update package.json template
