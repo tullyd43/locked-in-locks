@@ -23,7 +23,8 @@
 		"@astrojs/partytown": "^2.1.4",
 		"@astrojs/sitemap": "^3.4.2",
 		"astro": "^5.12.8",
-		"esm": "^3.2.25"
+		"esm": "^3.2.25",
+		"flux.js": "^0.1.0"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.28.0",
