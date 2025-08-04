@@ -23,6 +23,8 @@
 	},
 	"homepage": "https://github.com/tullyd43/locked-in-locks#readme",
 	"dependencies": {
+		"@astrojs/partytown": "^2.1.4",
+		"@astrojs/sitemap": "^3.4.2",
 		"esm": "^3.2.25"
 	},
 	"devDependencies": {
