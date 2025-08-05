@@ -133,7 +133,7 @@ header {
 
 main {
   padding-top: 60px; /* Prevent content from hiding behind sticky header */
-  height: 100%;
+  flex-grow: 1; /* Allow main content to grow and push footer down */
 }
 
 
@@ -219,7 +219,8 @@ a[aria-current='page'] {
 		box-shadow: none; /* Remove inset border for desktop */
 	}
 
-	/* Revert dropdown to a flyout menu on desktop */
+	/* --- Desktop Flyout Menu --- */
+	/* Hide by default */
 	.dropdown {
 		opacity: 0;
 		visibility: hidden;
@@ -235,6 +236,7 @@ a[aria-current='page'] {
 		max-height: none; /* Reset max-height from mobile */
 	}
 
+	/* Show on hover of parent list item OR when .is-open is present for JS control */
 	.dropdown.is-open {
 		opacity: 1;
 		visibility: visible;

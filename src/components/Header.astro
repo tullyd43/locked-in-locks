@@ -1,0 +1,155 @@
+---
+// This component contains the site's header and main navigation.
+// It receives the currentPath to correctly highlight the active link.
+const { currentPath } = Astro.props;
+---
+
+<header>
+	<div class="nav-container">
+		<button
+			class="hamburger"
+			id="hamburger-menu"
+			aria-label="Open navigation"
+			aria-controls="nav-list"
+			aria-expanded="false"
+		>
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<nav class="nav-menu" id="main-nav" aria-label="Main navigation">
+			<ul id="nav-list" role="menubar">
+				<li class="nav-list-items" role="menuitem">
+					<a href="/" aria-current={currentPath === '/' ? 'page' : false}
+						>Home</a
+					>
+				</li>
+				<li class="nav-list-items" role="menuitem">
+					<a
+						href="/services"
+						id="services-link"
+						aria-expanded="false"
+						aria-controls="services-dropdown"
+						aria-current={currentPath === '/services' ? 'page' : false}>Services</a
+					>
+					<ul class="dropdown" id="services-dropdown" role="menu">
+						<li class="nav-list-item-dropdown" role="menuitem">
+							<a
+								href="/services"
+								tabindex="0"
+								aria-current={currentPath === '/services' ? 'page' : false}
+								><strong>All Services</strong></a
+							>
+						</li>
+						<li class="nav-list-item-dropdown" role="menuitem">
+							<a
+								href="/residential-services"
+								tabindex="0"
+								aria-current={currentPath === '/residential-services' ? 'page' : false}
+								>Residential Services</a
+							>
+						</li>
+						<li class="nav-list-item-dropdown" role="menuitem">
+							<a
+								href="/commercial-services"
+								tabindex="0"
+								aria-current={currentPath === '/commercial-services' ? 'page' : false}
+								>Commercial Services</a
+							>
+						</li>
+						<li class="nav-list-item-dropdown" role="menuitem">
+							<a
+								href="/automotive-services"
+								tabindex="0"
+								aria-current={currentPath === '/automotive-services' ? 'page' : false}
+								>Automotive Services</a
+							>
+						</li>
+						<li class="nav-list-item-dropdown" role="menuitem">
+							<a
+								href="/emergency-services"
+								tabindex="0"
+								aria-current={currentPath === '/emergency-services' ? 'page' : false}
+								>24/7 Emergency Services</a
+							>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-list-items" role="menuitem">
+					<a href="/about-us" aria-current={currentPath === '/about-us' ? 'page' : false}>About Us</a>
+				</li>
+				<li class="nav-list-items" role="menuitem">
+					<a href="/service-areas" aria-current={currentPath === '/service-areas' ? 'page' : false}>Service Areas</a>
+				</li>
+				<li class="nav-list-items" role="menuitem">
+					<a href="/security-tips" aria-current={currentPath === '/security-tips' ? 'page' : false}>Security Tips</a>
+				</li>
+				<li class="nav-list-items" role="menuitem">
+					<a href="/faq" aria-current={currentPath === '/faq' ? 'page' : false}>FAQ</a>
+				</li>
+				<li class="nav-list-items" role="menuitem">
+					<a href="/contact-us" aria-current={currentPath === '/contact-us' ? 'page' : false}>Contact Us</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		const hamburger = document.getElementById('hamburger-menu');
+		const navMenu = document.getElementById('main-nav');
+		const servicesLink = document.getElementById('services-link');
+		const servicesDropdown = document.getElementById('services-dropdown');
+
+		// Toggle mobile navigation
+		hamburger.addEventListener('click', () => {
+			const isOpen = hamburger.classList.toggle('is-open');
+			navMenu.classList.toggle('is-open');
+			hamburger.setAttribute('aria-expanded', String(isOpen));
+			document.body.classList.toggle('no-scroll', isOpen);
+		});
+
+		const servicesMenuItem = servicesLink.parentElement; // The <li> element
+		const isDesktop = () => window.matchMedia('(min-width: 769px)').matches;
+
+		const openDropdown = () => {
+			servicesDropdown.classList.add('is-open');
+			servicesLink.setAttribute('aria-expanded', 'true');
+		};
+
+		const closeDropdown = () => {
+			servicesDropdown.classList.remove('is-open');
+			servicesLink.setAttribute('aria-expanded', 'false');
+		};
+
+		// Mobile accordion behavior
+		servicesLink.addEventListener('click', (e) => {
+			if (!isDesktop()) {
+				e.preventDefault();
+				servicesDropdown.classList.contains('is-open') ? closeDropdown() : openDropdown();
+			}
+			// On desktop, the click navigates as normal
+		});
+
+		// Desktop hover and focus behavior for accessibility
+		servicesMenuItem.addEventListener('mouseenter', () => {
+			if (isDesktop()) openDropdown();
+		});
+
+		servicesMenuItem.addEventListener('mouseleave', () => {
+			if (isDesktop()) closeDropdown();
+		});
+
+		servicesMenuItem.addEventListener('focusin', () => {
+			if (isDesktop()) openDropdown();
+		});
+
+		servicesMenuItem.addEventListener('focusout', (e) => {
+			// Close only if focus moves outside the entire menu item, including the dropdown
+			if (isDesktop() && !servicesMenuItem.contains(e.relatedTarget)) {
+				closeDropdown();
+			}
+		});
+	});
+</script>
