@@ -1,26 +1,32 @@
-// Dropdown toggle for Services using visibility and opacity for SEO/accessibility
+// A more robust dropdown toggle for Services, optimized for SEO/accessibility
 
 document.addEventListener("DOMContentLoaded", function () {
-	const servicesLink = document.querySelector('a[href="services.html"]');
-	const dropdown = servicesLink && servicesLink.nextElementSibling;
-	if (servicesLink && dropdown) {
-		// Hide dropdown by default using CSS classes
-		dropdown.classList.add("dropdown-hidden");
+	// Using an ID is more robust than a generic attribute selector.
+	// Ensure your HTML link has id="services-link"
+	const servicesLink = document.getElementById("services-link");
+	if (!servicesLink) return;
+
+	// Link the trigger to the dropdown panel using aria-controls for robustness.
+	// HTML: <a id="services-link" aria-controls="services-dropdown">...</a>
+	//       <ul id="services-dropdown" class="dropdown">...</ul>
+	const dropdownId = servicesLink.getAttribute("aria-controls");
+	const dropdown = dropdownId ? document.getElementById(dropdownId) : null;
+
+	if (dropdown) {
 		servicesLink.addEventListener("click", function (e) {
 			e.preventDefault();
-			const isOpen = dropdown.classList.contains("dropdown-visible");
-			dropdown.classList.toggle("dropdown-visible", !isOpen);
-			dropdown.classList.toggle("dropdown-hidden", isOpen);
+			const isOpen = servicesLink.getAttribute("aria-expanded") === "true";
 			servicesLink.setAttribute("aria-expanded", !isOpen);
+			// Toggle a single state class. CSS should handle the visibility.
+			// .dropdown { opacity: 0; visibility: hidden; }
+			// .dropdown.is-open { opacity: 1; visibility: visible; }
+			dropdown.classList.toggle("is-open");
 		});
-		// Optional: close dropdown when clicking outside
+
+		// Close dropdown when clicking outside
 		document.addEventListener("click", function (e) {
-			if (
-				!servicesLink.contains(e.target) &&
-				!dropdown.contains(e.target)
-			) {
-				dropdown.classList.remove("dropdown-visible");
-				dropdown.classList.add("dropdown-hidden");
+			if (dropdown.classList.contains("is-open") && !servicesLink.contains(e.target) && !dropdown.contains(e.target)) {
+				dropdown.classList.remove("is-open");
 				servicesLink.setAttribute("aria-expanded", "false");
 			}
 		});

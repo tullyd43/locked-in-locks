@@ -1,13 +1,12 @@
 ---
+import BaseLayout from "../../public/layouts/BaseLayout.astro";
+
+const pageTitle = "Areas We Service | Locked In Locksmith";
+const pageDescription =
+	"Find out if Locked In Locksmith serves your neighborhood. We provide fast, reliable locksmith services to a wide range of locations. See our full service area list.";
 ---
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-  </head>
-  <body>
-    Test
-  </body>
-</html>
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+	<h1>Our Service Areas</h1>
+	<p>We proudly serve the following communities. If you don't see your location listed, please contact us to see if we can assist you.</p>
+</BaseLayout>

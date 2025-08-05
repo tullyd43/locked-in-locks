@@ -1,0 +1,55 @@
+---
+// This is a reusable layout component.
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+// Any page that uses this layout will have the same header, footer, and base styles.
+export interface Props {
+	title: string;
+	description: string;
+}
+
+const { title, description } = Astro.props;
+const currentPath = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="/styles/main.css" />
+		<link rel="sitemap" href="/sitemap-index.xml" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content={description} />
+		<meta
+			name="keywords"
+			content="locksmith, locksmith services, emergency locksmith, residential locksmith, commercial locksmith, automotive locksmith, lockout, key replacement, lock repair, 24/7 locksmith, Locked In Locksmith"
+		/>
+		<meta name="author" content="Locked In Locksmith" />
+		<link rel="canonical" href={Astro.url.href} />
+		<!-- <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon"> -->
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={Astro.url.href} />
+		<!-- <meta property="og:image" content="https://www.lockedinlocks.com/assets/images/og-image.jpg"> -->
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<!-- <meta name="twitter:image" content="https://www.lockedinlocks.com/assets/images/og-image.jpg"> -->
+		<title>{title}</title>
+	</head>
+	<body>
+		<a href="#main-content" class="skip-to-content">Skip to main content</a>
+		<Header currentPath={currentPath} />
+
+		<main id="main-content" role="main">
+			<slot />
+		</main>
+		<script src="/scripts/client-scripts/dropdown.js" type="module"></script>
+		<script src="/scripts/client-scripts/hamburger.js" type="module"></script>
+
+		<Footer />
+	</body>
+</html>

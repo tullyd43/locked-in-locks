@@ -1,354 +1,246 @@
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-
-/* Document
-   ========================================================================== */
-
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
-
-/* A recommended best-practice to make layouts more intuitive. */
-html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+* {
   box-sizing: border-box;
-}
-
-/* Sections
-   ========================================================================== */
-
-/**
- * Remove the margin in all browsers.
- */
-
-body {
   margin: 0;
-}
-
-/**
- * Render the `main` element consistently in IE.
- */
-
-main {
-  display: block;
-}
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/* Grouping content
-   ========================================================================== */
-
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-
-hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-/* Text-level semantics
-   ========================================================================== */
-
-/**
- * Remove the gray background on active links in IE 10.
- */
-
-a {
-  background-color: transparent;
-}
-
-/**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-
-abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
-}
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-code,
-kbd,
-samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-/**
- * Add the correct font size in all browsers.
- */
-
-small {
-  font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/* Embedded content
-   ========================================================================== */
-
-/**
- * Remove the border on images inside links in IE 10-.
- */
-
-img {
-  border-style: none;
-}
-
-/* Forms
-   ========================================================================== */
-
-/**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
-}
-
-/**
- * Show the overflow in IE.
- */
-
-button,
-input {
-  overflow: visible;
-}
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the padding in IE.
- */
-
-button,
-select {
-  text-transform: none;
-}
-
-/**
- * Correct the inability to style clickable types in iOS and Safari.
- */
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
   padding: 0;
 }
 
-/**
- * Restore the focus styles unset by the previous rule.
- */
-
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+body {
+  background-color: rgb(34, 36, 37);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
-/**
- * Correct the padding on tablets and smartphones.
- */
-
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
+header {
+  background-color: burlywood;
+  height: 60px;
+  width: 100%;
+  position: fixed; /* Make header sticky */
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- */
-
-legend {
-  box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 1 */
-  white-space: normal; /* 1 */
+.nav-container {
+  display: flex;
+  justify-content: flex-end; /* Push hamburger to the right */
+  align-items: center;
+  height: 100%;
+  padding: 0 1rem;
 }
 
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-
-progress {
-  vertical-align: baseline;
+.nav-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  max-width: 300px;
+  height: 100vh;
+  background-color: burlywood;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  transform: translateX(100%); /* Start off-screen */
+  visibility: hidden;
+  transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  z-index: 999; /* Below the hamburger button */
+  padding: 1rem;
+  font-size: 1.2rem;
 }
 
-/**
- * Remove the default vertical scrollbar in IE 10+.
- */
-
-textarea {
-  overflow: auto;
+.nav-menu.is-open {
+  transform: translateX(0);
+  visibility: visible;
 }
 
-/**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
-
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
+.nav-list-items {
+  list-style: none;
+  /* Remove padding from li, it will be handled by the anchor tag */
+  padding: 0;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.15); /* Add a separator line */
 }
 
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
+.nav-list-items:last-of-type {
+	border-bottom: none; /* Remove separator from the last item for a cleaner look */
 }
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-
-[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
-}
-
-/**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
-}
-
-/* Interactive
-   ========================================================================== */
-
-/*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
-
-details {
+.nav-list-items > a {
+  text-decoration: none;
+  color: #333;
   display: block;
+  padding: 1rem 1.5rem; /* Increase padding for better spacing and touch targets */
 }
 
-/*
- * Add the correct display in all browsers.
- */
-
-summary {
-  display: list-item;
+.nav-list-item-dropdown {
+  list-style: none;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.1); /* Softer separator for dropdown */
 }
 
-/* Misc
-   ========================================================================== */
-
-/**
- * Add the correct display in IE 10+.
- */
-
-template {
-  display: none;
+.nav-list-item-dropdown:last-child {
+	border-bottom: none;
 }
 
-/**
- * Add the correct display in IE 10.
- */
-
-[hidden] {
-  display: none;
+.nav-list-item-dropdown a {
+	display: block;
+	padding: 0.75rem 1.5rem;
+	color: #333;
+	text-decoration: none;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+.nav-list-items > a:hover,
+.nav-list-item-dropdown a:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/* Hamburger Icon Styles */
+.hamburger {
+  background: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	z-index: 1001; /* Ensure it's above other content */
+  height: fit-content;
+  align-self: center;
+}
+
+.hamburger:focus {
+  /* A basic focus style for accessibility */
+	outline: 2px solid blue;
+	outline-offset: 2px;
+}
+
+.hamburger span {
+  display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px 0;
+	background-color: #333; /* Dark color for the bars */
+	transition: all 0.3s ease-in-out;
+}
+
+/* "X" animation for when the menu is open (toggled by JS) */
+.hamburger.is-open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.is-open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.is-open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+main {
+  padding-top: 60px; /* Prevent content from hiding behind sticky header */
+  height: 100%;
+}
+
+
+footer {
+  background-color: black;
+  height: 100px;
+  width: 100%;
+
+  z-index: 1002;
+}
+
+/* Prevent body scroll when mobile menu is open */
+body.no-scroll {
+  overflow: hidden;
+}
+
+/* --- Dropdown Menu Styles (Mobile-First Accordion) --- */
+.dropdown {
+	/* Accordion styles for mobile nav */
+	list-style: none;
+	max-height: 0;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	background-color: rgba(0, 0, 0, 0.05); /* Slightly different background to distinguish */
+	transition: max-height 0.3s ease-in-out;
+	border-radius: 4px;
+}
+
+.dropdown.is-open {
+	max-height: 500px; /* A value large enough to show all items */
+}
+
+.nav-list-item-dropdown a {
+	padding-left: 2.5rem; /* Indent dropdown links */
+}
+
+/* Active navigation link style */
+a[aria-current='page'] {
+	font-weight: bold;
+	/* Use an inset box-shadow for a clean inner border */
+	box-shadow: inset 4px 0 0 0 rgba(0, 0, 0, 0.25);
+}
+
+/* --- Desktop Navigation & Dropdown Overrides --- */
+@media (min-width: 769px) {
+	.nav-menu {
+		position: static;
+		transform: none;
+		visibility: visible;
+		height: auto;
+		width: auto;
+		background-color: transparent;
+		box-shadow: none;
+		padding: 0;
+		font-size: 1rem;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.nav-menu ul {
+		flex-direction: row;
+	}
+
+	.hamburger {
+		display: none;
+	}
+
+	.nav-list-items {
+		position: relative; /* Context for flyout */
+		border-bottom: none; /* No separators on desktop */
+		margin-left: 1rem;
+	}
+
+	.nav-list-items > a {
+		padding: 0.5rem 1rem; /* Adjust padding for horizontal menu */
+		border-radius: 4px;
+	}
+
+	/* Active link style for desktop */
+	a[aria-current='page'] {
+		background-color: rgba(0, 0, 0, 0.1);
+		box-shadow: none; /* Remove inset border for desktop */
+	}
+
+	/* Revert dropdown to a flyout menu on desktop */
+	.dropdown {
+		opacity: 0;
+		visibility: hidden;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background-color: burlywood;
+		padding: 0.5rem 0;
+		min-width: 220px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+		z-index: 1000;
+		transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+		max-height: none; /* Reset max-height from mobile */
+	}
+
+	.dropdown.is-open {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.nav-list-item-dropdown a {
+		padding: 0.5rem 1rem; /* Adjust padding for flyout */
+	}
 }

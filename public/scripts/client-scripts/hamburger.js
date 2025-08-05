@@ -1,13 +1,17 @@
-// Hamburger menu toggle for mobile navigation
+document.addEventListener("DOMContentLoaded", () => {
+	const hamburgerButton = document.getElementById("hamburger-menu");
+	const navMenu = document.getElementById("main-nav");
 
-document.addEventListener("DOMContentLoaded", function () {
-	const hamburger = document.getElementById("hamburger-menu");
-	const navList = document.getElementById("nav-list");
-	if (hamburger && navList) {
-		hamburger.addEventListener("click", function () {
-			const isOpen = navList.classList.toggle("open");
-			hamburger.setAttribute("aria-expanded", isOpen);
+	if (hamburgerButton && navMenu) {
+		hamburgerButton.addEventListener("click", () => {
+			// Toggle the 'is-open' class on both the button and the menu
+			hamburgerButton.classList.toggle("is-open");
+			navMenu.classList.toggle("is-open");
+
+			// Update ARIA attribute for accessibility
+			const isExpanded = hamburgerButton.classList.contains("is-open");
+			hamburgerButton.setAttribute("aria-expanded", isExpanded);
+			document.body.classList.toggle("no-scroll", isExpanded);
 		});
 	}
 });
-

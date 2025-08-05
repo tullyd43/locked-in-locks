@@ -1,14 +1,12 @@
 ---
+import BaseLayout from '../../public/layouts/BaseLayout.astro';
+
+const pageTitle = 'About Us | Locked In Locksmith';
+const pageDescription =
+	'Learn more about Locked In Locksmith, our mission, and our team of expert locksmiths.';
 ---
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-  </head>
-  <body>
-    <p>test</p>
-    <h1>jkhgkljhgl</h1>
-  </body>
-</html>
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+	<h1>About Us</h1>
+	<p>This is where you can write about your company.</p>
+</BaseLayout>
