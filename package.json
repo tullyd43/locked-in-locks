@@ -6,8 +6,10 @@
 	"module": "main.js",
 	"type": "module",
 	"scripts": {
-		"test": "echo \\\"Error: no test specified\\\" && exit 1",
-		"deploy": "git subtree push --prefix dist origin gh-pages"
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview"
 	},
 	"repository": {
 		"type": "git",
@@ -37,5 +39,8 @@
 		"globals": "^16.3.0",
 		"jsdom": "^26.1.0",
 		"prettier": "3.5.3"
+	},
+	"optionalDependencies": {
+		"@rollup/rollup-linux-x64-gnu": "^4.20.0"
 	}
 }
