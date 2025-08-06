@@ -1,0 +1,2 @@
+create new template for each type of Content
+ask for script to replace contents of files with layouts automatically

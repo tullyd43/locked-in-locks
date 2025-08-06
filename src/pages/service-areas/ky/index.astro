@@ -1,0 +1,212 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const kentuckyPages = [
+  {
+    url: "/service-areas/ky/boone-county",
+    name: "Boone County"
+  },
+  {
+    url: "/service-areas/ky/campbell-county",
+    name: "Campbell County"
+  },
+  {
+    url: "/service-areas/ky/kenton-county",
+    name: "Kenton County"
+  },
+  {
+    url: "/service-areas/ky/florence",
+    name: "Florence"
+  },
+  {
+    url: "/service-areas/ky/union",
+    name: "Union"
+  },
+  {
+    url: "/service-areas/ky/walton",
+    name: "Walton"
+  },
+  {
+    url: "/service-areas/ky/burlington",
+    name: "Burlington"
+  },
+  {
+    url: "/service-areas/ky/hebron",
+    name: "Hebron"
+  },
+  {
+    url: "/service-areas/ky/verona",
+    name: "Verona"
+  },
+  {
+    url: "/service-areas/ky/petersburg",
+    name: "Petersburg"
+  },
+  {
+    url: "/service-areas/ky/rabbit-hash",
+    name: "Rabbit Hash"
+  },
+  {
+    url: "/service-areas/ky/oakbrook",
+    name: "Oakbrook"
+  },
+  {
+    url: "/service-areas/ky/belleview",
+    name: "Belleview"
+  },
+  {
+    url: "/service-areas/ky/francisville",
+    name: "Francisville"
+  },
+  {
+    url: "/service-areas/ky/alexandria",
+    name: "Alexandria"
+  },
+  {
+    url: "/service-areas/ky/newport",
+    name: "Newport"
+  },
+  {
+    url: "/service-areas/ky/bellevue",
+    name: "Bellevue"
+  },
+  {
+    url: "/service-areas/ky/cold-spring",
+    name: "Cold Spring"
+  },
+  {
+    url: "/service-areas/ky/fort-thomas",
+    name: "Fort Thomas"
+  },
+  {
+    url: "/service-areas/ky/highland-heights",
+    name: "Highland Heights"
+  },
+  {
+    url: "/service-areas/ky/silver-grove",
+    name: "Silver Grove"
+  },
+  {
+    url: "/service-areas/ky/southgate",
+    name: "Southgate"
+  },
+  {
+    url: "/service-areas/ky/wilder",
+    name: "Wilder"
+  },
+  {
+    url: "/service-areas/ky/dayton",
+    name: "Dayton"
+  },
+  {
+    url: "/service-areas/ky/california",
+    name: "California"
+  },
+  {
+    url: "/service-areas/ky/melbourne",
+    name: "Melbourne"
+  },
+  {
+    url: "/service-areas/ky/mentor",
+    name: "Mentor"
+  },
+  {
+    url: "/service-areas/ky/crestview",
+    name: "Crestview"
+  },
+  {
+    url: "/service-areas/ky/woodlawn",
+    name: "Woodlawn"
+  },
+  {
+    url: "/service-areas/ky/claryville",
+    name: "Claryville"
+  },
+  {
+    url: "/service-areas/ky/covington",
+    name: "Covington"
+  },
+  {
+    url: "/service-areas/ky/independence",
+    name: "Independence"
+  },
+  {
+    url: "/service-areas/ky/erlanger",
+    name: "Erlanger"
+  },
+  {
+    url: "/service-areas/ky/edgewood",
+    name: "Edgewood"
+  },
+  {
+    url: "/service-areas/ky/fort-mitchell",
+    name: "Fort Mitchell"
+  },
+  {
+    url: "/service-areas/ky/villa-hills",
+    name: "Villa Hills"
+  },
+  {
+    url: "/service-areas/ky/taylor-mill",
+    name: "Taylor Mill"
+  },
+  {
+    url: "/service-areas/ky/fort-wright",
+    name: "Fort Wright"
+  },
+  {
+    url: "/service-areas/ky/elsmere",
+    name: "Elsmere"
+  },
+  {
+    url: "/service-areas/ky/crescent-springs",
+    name: "Crescent Springs"
+  },
+  {
+    url: "/service-areas/ky/ludlow",
+    name: "Ludlow"
+  },
+  {
+    url: "/service-areas/ky/park-hills",
+    name: "Park Hills"
+  },
+  {
+    url: "/service-areas/ky/crestview-hills",
+    name: "Crestview Hills"
+  },
+  {
+    url: "/service-areas/ky/lakeside-park",
+    name: "Lakeside Park"
+  },
+  {
+    url: "/service-areas/ky/ryland-heights",
+    name: "Ryland Heights"
+  },
+  {
+    url: "/service-areas/ky/kenton-vale",
+    name: "Kenton Vale"
+  },
+  {
+    url: "/service-areas/ky/bromley",
+    name: "Bromley"
+  },
+  {
+    url: "/service-areas/ky/fairview",
+    name: "Fairview"
+  }
+];
+---
+
+<BaseLayout
+  title="Kentucky Service Areas"
+  description="A list of our service areas in Kentucky."
+>
+  <h1>Kentucky Service Areas</h1>
+  <ul>
+    {kentuckyPages.map(page => (
+      <li>
+        <a href={page.url}>{page.name}</a>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>

@@ -1,0 +1,232 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const ohioPages = [
+  {
+    url: "/service-areas/oh/hamilton-county",
+    name: "Hamilton County"
+  },
+  {
+    url: "/service-areas/oh/cincinnati",
+    name: "Cincinnati"
+  },
+  {
+    url: "/service-areas/oh/green-township",
+    name: "Green Township"
+  },
+  {
+    url: "/service-areas/oh/colerain-township",
+    name: "Colerain Township"
+  },
+  {
+    url: "/service-areas/oh/anderson-township",
+    name: "Anderson Township"
+  },
+  {
+    url: "/service-areas/oh/fairfield",
+    name: "Fairfield"
+  },
+  {
+    url: "/service-areas/oh/springfield-township",
+    name: "Springfield Township"
+  },
+  {
+    url: "/service-areas/oh/delhi-township",
+    name: "Delhi Township"
+  },
+  {
+    url: "/service-areas/oh/sycamore-township",
+    name: "Sycamore Township"
+  },
+  {
+    url: "/service-areas/oh/white-oak",
+    name: "White Oak"
+  },
+  {
+    url: "/service-areas/oh/norwood",
+    name: "Norwood"
+  },
+  {
+    url: "/service-areas/oh/forest-park",
+    name: "Forest Park"
+  },
+  {
+    url: "/service-areas/oh/miami-township",
+    name: "Miami Township"
+  },
+  {
+    url: "/service-areas/oh/symmes-township",
+    name: "Symmes Township"
+  },
+  {
+    url: "/service-areas/oh/bridgetown",
+    name: "Bridgetown"
+  },
+  {
+    url: "/service-areas/oh/harrison-township",
+    name: "Harrison Township"
+  },
+  {
+    url: "/service-areas/oh/sharonville",
+    name: "Sharonville"
+  },
+  {
+    url: "/service-areas/oh/blue-ash",
+    name: "Blue Ash"
+  },
+  {
+    url: "/service-areas/oh/finneytown",
+    name: "Finneytown"
+  },
+  {
+    url: "/service-areas/oh/loveland",
+    name: "Loveland"
+  },
+  {
+    url: "/service-areas/oh/monfort-heights",
+    name: "Monfort Heights"
+  },
+  {
+    url: "/service-areas/oh/springdale",
+    name: "Springdale"
+  },
+  {
+    url: "/service-areas/oh/reading",
+    name: "Reading"
+  },
+  {
+    url: "/service-areas/oh/montgomery",
+    name: "Montgomery"
+  },
+  {
+    url: "/service-areas/oh/harrison",
+    name: "Harrison"
+  },
+  {
+    url: "/service-areas/oh/north-college-hill",
+    name: "North College Hill"
+  },
+  {
+    url: "/service-areas/oh/wyoming",
+    name: "Wyoming"
+  },
+  {
+    url: "/service-areas/oh/madeira",
+    name: "Madeira"
+  },
+  {
+    url: "/service-areas/oh/cheviot",
+    name: "Cheviot"
+  },
+  {
+    url: "/service-areas/oh/kenwood",
+    name: "Kenwood"
+  },
+  {
+    url: "/service-areas/oh/milford",
+    name: "Milford"
+  },
+  {
+    url: "/service-areas/oh/whitewater-township",
+    name: "Whitewater Township"
+  },
+  {
+    url: "/service-areas/oh/mount-healthy",
+    name: "Mount Healthy"
+  },
+  {
+    url: "/service-areas/oh/crosby-township",
+    name: "Crosby Township"
+  },
+  {
+    url: "/service-areas/oh/indian-hill",
+    name: "Indian Hill"
+  },
+  {
+    url: "/service-areas/oh/deer-park",
+    name: "Deer Park"
+  },
+  {
+    url: "/service-areas/oh/columbia-township",
+    name: "Columbia Township"
+  },
+  {
+    url: "/service-areas/oh/st-bernard",
+    name: "St. Bernard"
+  },
+  {
+    url: "/service-areas/oh/woodlawn",
+    name: "Woodlawn"
+  },
+  {
+    url: "/service-areas/oh/greenhills",
+    name: "Greenhills"
+  },
+  {
+    url: "/service-areas/oh/golf-manor",
+    name: "Golf Manor"
+  },
+  {
+    url: "/service-areas/oh/amberley",
+    name: "Amberley"
+  },
+  {
+    url: "/service-areas/oh/lockland",
+    name: "Lockland"
+  },
+  {
+    url: "/service-areas/oh/mariemont",
+    name: "Mariemont"
+  },
+  {
+    url: "/service-areas/oh/lincoln-heights",
+    name: "Lincoln Heights"
+  },
+  {
+    url: "/service-areas/oh/cleves",
+    name: "Cleves"
+  },
+  {
+    url: "/service-areas/oh/evendale",
+    name: "Evendale"
+  },
+  {
+    url: "/service-areas/oh/newtown",
+    name: "Newtown"
+  },
+  {
+    url: "/service-areas/oh/terrace-park",
+    name: "Terrace Park"
+  },
+  {
+    url: "/service-areas/oh/elmwood-place",
+    name: "Elmwood Place"
+  },
+  {
+    url: "/service-areas/oh/glendale",
+    name: "Glendale"
+  },
+  {
+    url: "/service-areas/oh/fairfax",
+    name: "Fairfax"
+  },
+  {
+    url: "/service-areas/oh/north-bend",
+    name: "North Bend"
+  }
+];
+---
+
+<BaseLayout
+  title="Ohio Service Areas"
+  description="A list of our service areas in Ohio."
+>
+  <h1>Ohio Service Areas</h1>
+  <ul>
+    {ohioPages.map(page => (
+      <li>
+        <a href={page.url}>{page.name}</a>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>

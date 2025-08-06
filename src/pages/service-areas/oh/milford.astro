@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ServiceArea from '../../../components/ServiceArea.astro';
+---
+
+<BaseLayout 
+  title="Milford Automotive Locksmith"
+  description="Your trusted automotive locksmith in Milford, OH. We offer a wide range of services from emergency unlocking to key fob replacement for all makes and models."
+>
+  <ServiceArea
+    areaName="Milford"
+    state="Ohio"
+    mainSlogan="Your Premier Automotive Locksmith in Milford"
+    description="Locked out of your car? Need a new key fob? Our mobile locksmiths are ready to provide fast, reliable service anywhere in Milford. We handle everything from emergency lockouts at major landmarks to key replacements in your driveway."
+    landmarks={[
+      "Historic Downtown Milford",
+      "Valley View Nature Preserve",
+      "Miami Township",
+      "Terrace Park",
+      "Indian Hill"
+    ]}
+  />
+</BaseLayout>

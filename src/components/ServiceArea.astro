@@ -1,0 +1,37 @@
+---
+interface Props {
+  areaName: string;
+  state: string;
+  mainSlogan: string;
+  description: string;
+  landmarks: string[];
+}
+
+const { areaName, state, mainSlogan, description, landmarks } = Astro.props;
+---
+
+<div class="service-area-container">
+  <h1>{mainSlogan}</h1>
+  <p>{description}</p>
+  
+  <h2>Servicing All of {areaName}</h2>
+  <p>We cover all neighborhoods and townships within {areaName}, including:</p>
+  <ul>
+    {landmarks.map(landmark => <li>{landmark}</li>)}
+  </ul>
+
+  <h2>Our Services in {areaName}</h2>
+  <p>We offer a complete range of automotive locksmith services to the residents of {areaName}, {state}.</p>
+  <ul>
+    <li><a href="/services/emergency-vehicle-unlocking">Emergency Vehicle Unlocking</a></li>
+    <li><a href="/services/all-keys-lost-replacement">All Keys Lost Replacement</a></li>
+    <li><a href="/services/key-fob-replacement">Key Fob Replacement</a></li>
+    <li><a href="/services/smart-key-programming">Smart Key Programming</a></li>
+    <li><a href="/services/ignition-repair">Ignition Repair</a></li>
+  </ul>
+
+  <div class="cta">
+    <p>Contact us today for fast and reliable service in {areaName}!</p>
+    <a href="tel:5135551234">(513) 555-1234</a>
+  </div>
+</div>

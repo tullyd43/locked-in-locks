@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ServiceArea from '../../../components/ServiceArea.astro';
+---
+
+<BaseLayout 
+  title="Monfort Heights Automotive Locksmith"
+  description="Your trusted automotive locksmith in Monfort Heights, OH. We offer a wide range of services from emergency unlocking to key fob replacement for all makes and models."
+>
+  <ServiceArea
+    areaName="Monfort Heights"
+    state="Ohio"
+    mainSlogan="Your Premier Automotive Locksmith in Monfort Heights"
+    description="Locked out of your car? Need a new key fob? Our mobile locksmiths are ready to provide fast, reliable service anywhere in Monfort Heights. We handle everything from emergency lockouts at major landmarks to key replacements in your driveway."
+    landmarks={[
+      "Monfort Heights Plaza",
+      "White Oak",
+      "Groesbeck",
+      "Cheviot",
+      "Bridgetown"
+    ]}
+  />
+</BaseLayout>

@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ServiceArea from '../../../components/ServiceArea.astro';
+---
+
+<BaseLayout 
+  title="Cold Spring Automotive Locksmith"
+  description="Your trusted automotive locksmith in Cold Spring, KY. We offer a wide range of services from emergency unlocking to key fob replacement for all makes and models."
+>
+  <ServiceArea
+    areaName="Cold Spring"
+    state="Kentucky"
+    mainSlogan="Your Premier Automotive Locksmith in Cold Spring"
+    description="Locked out of your car? Need a new key fob? Our mobile locksmiths are ready to provide fast, reliable service anywhere in Cold Spring. We handle everything from emergency lockouts at major landmarks to key replacements in your driveway."
+    landmarks={[
+      "Northern Kentucky University",
+      "Alexandria",
+      "Highland Heights",
+      "Silver Grove",
+      "Newport"
+    ]}
+  />
+</BaseLayout>
