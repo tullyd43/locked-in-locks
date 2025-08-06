@@ -1,0 +1,172 @@
+### Website Hierarchy Representation
+
+This shows how the pages relate to each other, flowing from the most general to the most specific.
+
+```
+[Homepage: /]
+ │
+ ├── [Core Service Page: /services/key-fob-replacement/]
+ │    │ (Links down to specific brand versions of this service)
+ │    │
+ │    └── [Combined Brand + Service Page: /automotive-locksmith/ford/key-fob-replacement/]
+ │         (Links up to the Core Service Page and the Brand Pillar Page)
+ │
+ ├── [Brand Pillar Page: /automotive-locksmith/ford/]
+ │    │ (Links down to all services offered for this brand)
+ │    │
+ │    └── [Combined Brand + Service Page: /automotive-locksmith/ford/key-fob-replacement/]
+ │         (Links up to the Brand Pillar Page and the Core Service Page)
+ │
+ └── [Service Area Page: /service-areas/oh/cincinnati/]
+      (Links to core services and the homepage)
+```
+
+---
+
+### Page Content Templates
+
+Here are templates for what to include on each type of page to maximize SEO value and user experience.
+
+#### 1. Core Service Page Template
+
+*   **URL:** `/services/[service-name]/`
+*   **Example:** `/services/ignition-repair/`
+*   **Purpose:** To provide a comprehensive overview of a single service you offer. This page educates users who are trying to understand the service in general.
+
+```markdown
+# Page Title (H1): Expert [Service Name] for All Vehicle Makes and Models
+
+**Meta Description:** Need professional [Service Name]? We offer fast, reliable [Service Name] for cars, trucks, and vans. Learn about our process and get a free quote today.
+
+---
+
+### Introduction
+- Briefly explain what [Service Name] is and why someone might need it.
+- State clearly that you are experts in this service for a wide variety of vehicles.
+
+### Our [Service Name] Process
+- Provide a step-by-step overview of how you perform the service.
+- Use a numbered or bulleted list for readability.
+- Mention the quality of parts you use and the expertise of your technicians.
+
+### Brands We Service
+- **Crucial for Internal Linking:** This is where you link down to your specific pages.
+- Create a list or grid of vehicle brand logos or names.
+- Each item in this list should link directly to the corresponding "[Brand] + [Service]" page.
+- **Example:** A "Ford" link would go to `/automotive-locksmith/ford/ignition-repair/`.
+
+### Frequently Asked Questions (FAQ)
+- Answer 3-5 common questions about the general [Service Name].
+- Examples: "How long does [Service Name] take?", "Is it cheaper to repair or replace?", "What are the signs I need [Service Name]?".
+
+### Call to Action (CTA)
+- **Primary CTA:** "Get a Free Quote for Your [Service Name]" with a phone number and contact form.
+- **Secondary CTA:** "Choose your vehicle brand above to learn more."
+```
+
+#### 2. Brand Pillar Page Template
+
+*   **URL:** `/automotive-locksmith/[brand-name]/`
+*   **Example:** `/automotive-locksmith/ford/`
+*   **Purpose:** To establish your authority as the go-to locksmith for a specific vehicle brand. This is a "pillar" that supports all your specific service pages for that brand.
+
+```markdown
+# Page Title (H1): Your Trusted [Brand Name] Automotive Locksmith
+
+**Meta Description:** Locked out of your [Brand Name]? We specialize in all [Brand Name] locksmith services, from key replacement to ignition repair for models like the [Model 1], [Model 2], and [Model 3].
+
+---
+
+### Introduction
+- State that you are specialists for [Brand Name] vehicles.
+- Mention your experience with [Brand Name]'s specific security systems (e.g., Ford's PATS, Honda's Immobilizer).
+- List a few popular [Brand Name] models you service to build credibility (e.g., F-150, Explorer, Mustang for Ford).
+
+### Our [Brand Name] Locksmith Services
+- **Crucial for Internal Linking:** This is the core of the pillar page.
+- Create a list of all the services you offer for this specific brand.
+- Each service in the list must link to the corresponding "[Brand] + [Service]" page.
+- **Example:** A "Key Fob Replacement" link would go to `/automotive-locksmith/ford/key-fob-replacement/`.
+- **Example:** An "Ignition Repair" link would go to `/automotive-locksmith/ford/ignition-repair/`.
+
+### Why Choose Us for Your [Brand Name]?
+- Bullet points on your advantages:
+  - Dealer-level service at a lower cost.
+  - Mobile service that comes to you.
+  - Expertise with [Brand Name] key fobs, transponders, etc.
+
+### Call to Action (CTA)
+- **Primary CTA:** "Call Now for Immediate [Brand Name] Service" with a prominent phone number.
+- **Secondary CTA:** "Select a service above to learn more about how we can help."
+```
+
+#### 3. Combined Brand + Service Page Template
+
+*   **URL:** `/automotive-locksmith/[brand-name]/[service-name]/`
+*   **Example:** `/automotive-locksmith/ford/all-keys-lost-replacement/`
+*   **Purpose:** To rank for very specific, high-intent, long-tail search queries. This page should be the most detailed and specific of all.
+
+```markdown
+# Page Title (H1): [Brand Name] [Service Name] | We Service [Model 1], [Model 2] & More
+
+**Meta Description:** Lost all your [Brand Name] keys? We provide fast and affordable [Service Name] for all [Brand Name] models. Get back on the road today.
+
+---
+
+### Introduction
+- Address the user's specific problem directly: "Losing all the keys to your [Brand Name] can be stressful, but we have the solution."
+- Reassure them that you can perform [Service Name] for their specific vehicle, often faster and cheaper than the dealership.
+
+### The [Brand Name] [Service Name] Process
+- Get very specific. Detail the steps for *this brand*.
+- Mention any special tools or knowledge required for [Brand Name] vehicles.
+- List specific models and years this service applies to. (e.g., "Our all-keys-lost service for the Ford F-150 (2015-2023) involves...")
+
+### Other Services for Your [Brand Name]
+- Include 2-3 links to other relevant services for this brand.
+- **Example:** From the "All Keys Lost" page, you could link to "[Brand Name] Key Duplication" and "[Brand Name] Ignition Repair". This helps users and spreads link equity.
+
+### Internal Link Back
+- Include a sentence that links back up to the parent pages.
+- **Example:** "As your local [Brand Name] locksmith experts, we offer a full range of services. You can also learn more about our general [Service Name] for all vehicle types."
+  - "[Brand Name] locksmith experts" links to `/automotive-locksmith/[brand-name]/`.
+  - "[Service Name]" links to `/services/[service-name]/`.
+
+### Call to Action (CTA)
+- **Primary CTA:** Make it urgent and specific. "Get Your [Brand Name] Keys Replaced Now" with a phone number.
+```
+
+#### 4. Service Area Page Template
+
+*   **URL:** `/service-areas/[state]/[city-or-county]/`
+*   **Example:** `/service-areas/oh/cincinnati/`
+*   **Purpose:** To capture "near me" and location-based searches.
+
+```markdown
+# Page Title (H1): #1 Automotive Locksmith in [City/County Name]
+
+**Meta Description:** Need a reliable car locksmith in [City/County Name]? We provide fast, 24/7 mobile locksmith services throughout [City/County Name] and the surrounding areas.
+
+---
+
+### Introduction
+- State clearly that you are the premier automotive locksmith serving [City/County Name].
+- Mention that you are a mobile service and can get to them quickly anywhere in the area.
+
+### Localized Content
+- **Crucial for Local SEO:** Show you know the area.
+- Mention specific neighborhoods, landmarks, or major roads in [City/County Name].
+- **Example:** "Whether you're locked out at the Kenwood Towne Centre, need a new key in Hyde Park, or are stuck near the Great American Ball Park, our mobile units can reach you fast."
+
+### Our Automotive Locksmith Services in [City/County Name]
+- Provide a bulleted or grid list of your main services.
+- Link each service to its "Core Service Page".
+- **Example:** A "Key Duplication" link would go to `/services/key-duplication/`.
+- **Example:** An "Emergency Unlocking" link would go to `/services/emergency-vehicle-unlocking/`.
+
+### Map
+- Embed a Google Map showing your primary service area for [City/County Name].
+
+### Call to Action (CTA)
+- **Primary CTA:** "Call Us Now for Service in [City/County Name]" with your local phone number.
+```

@@ -1,0 +1,297 @@
+/ - Homepage
+
+A clear introduction, call-to-action for emergency services, and links to major service categories.
+/services/ - Main Services Landing Page
+
+An overview of all service categories. This is a "pillar page" for your services.
+/services/emergency-lockout/ - Emergency Services Page
+/services/emergency-lockout/car-unlocking/
+/services/emergency-lockout/trunk-unlocking/
+/services/emergency-lockout/broken-key-extraction/
+/services/key-fob-replacement-programming/ - Key & Fob Services Page
+/services/key-fob-replacement-programming/all-keys-lost/
+/services/key-fob-replacement-programming/key-duplication/
+/services/key-fob-replacement-programming/smart-key-programming/
+/services/key-fob-replacement-programming/key-fob-repair/
+/services/ignition-lock-repair/ - Ignition & Lock Services Page
+/services/ignition-lock-repair/ignition-switch-replacement/
+/services/ignition-lock-repair/car-rekeying/
+/services/ignition-lock-repair/door-lock-repair/
+/services/advanced-electronic/ - Advanced Electronic Services Page
+/services/advanced-electronic/transponder-key-programming/
+/services/advanced-electronic/ecu-programming-flashing/
+/services/advanced-electronic/immobilizer-services/
+/automotive-locksmith/ - Main Automotive Landing Page
+
+This page would be a pillar for all automotive-specific content, linking to services and brands.
+/automotive-locksmith/brands/ - Brands We Service Landing Page
+This page will list all the manufacturer groups and individual brands, linking to each one.
+/automotive-locksmith/ford/
+/automotive-locksmith/toyota/
+/automotive-locksmith/bmw/
+(...and a page for every other brand)
+/service-areas/ - Service Areas Page
+
+Crucial for local SEO. List the cities, neighborhoods, and zip codes you serve. You can even create a page for each major city.
+/about-us/ - About Us Page
+
+/contact-us/ - Contact Us Page
+
+/faq/ - Frequently Asked Questions Page
+
+/blog/ - Blog or Security Tips Page
+
+Rationale and SEO Benefits
+Clear Hierarchy: The /services/category/specific-service/ structure is logical for users and search engines. It establishes a clear topical authority.
+Keyword Targeting: Creating a dedicated page for each service (e.g., "Broken Key Extraction") and each car brand (e.g., "Ford Locksmith") allows you to target very specific, long-tail keywords that users are searching for (e.g., "locksmith for Ford F-150 near me").
+Pillar Pages and Topic Clusters: The /services/ and /automotive-locksmith/ pages act as "pillar pages." They link out to more specific "cluster pages" (like /services/key-duplication/ or /automotive-locksmith/honda/). This internal linking strategy is highly effective for SEO, as it signals to Google that you are an authority on these topics.
+Local SEO: The /service-areas/ section is fundamental for ranking in local search results.
+Grouped Car Manufacturers
+As requested, here is the list of manufacturers grouped by their parent companies. This is perfect for organizing the content on your /automotive-locksmith/brands/ page.
+
+General Motors
+Chevrolet
+GMC
+Buick
+Cadillac
+Ford Motor Company
+Ford
+Lincoln
+Stellantis
+Jeep
+Ram Trucks
+Dodge
+Chrysler
+Toyota Motor Corporation
+Toyota
+Lexus
+Volkswagen Group
+Volkswagen
+Audi
+Porsche
+Hyundai Motor Group
+Hyundai
+Kia
+Genesis
+Honda Motor Company
+Honda
+Acura
+Renault-Nissan-Mitsubishi Alliance
+Nissan
+Mitsubishi
+Tata Motors
+Land Rover
+Zhejiang Geely Holding Group
+Volvo
+Other Major Brands
+BMW
+Mercedes-Benz
+Subaru
+Mazda
+
+
+
+I. Emergency Lockout and Access Services
+These are the most common time-sensitive services for customers in immediate distress.
+
+24/7 Emergency Vehicle Unlocking: Gaining non-destructive entry to locked cars and trucks.
+
+Trunk Unlocking: Safely opening locked trunks without damaging the lock mechanism.   
+
+Broken Key Extraction: Skillfully removing keys that have broken off inside a door lock, trunk, or ignition cylinder.   
+
+Glove Box Unlocking: Gaining entry to locked glove compartments.
+
+II. Key and Fob Origination, Duplication, and Repair
+This category covers the creation and maintenance of all types of vehicle keys.
+
+Car Key Replacement for All Keys Lost: Creating a new, functional key from scratch when no original is available.   
+
+Car Key Duplication (Copying): Making spare keys when an original is present, including standard keys, chip keys, and high-security keys.   
+
+Key Fob and Remote Replacement: Supplying and programming new OEM or aftermarket key fobs and keyless entry remotes.   
+
+Smart Key and Proximity Key Services: Replacing and programming push-to-start and keyless-go smart keys.   
+
+High-Security / Laser Key Cutting: Cutting keys that have complex, milled patterns on the side of the blade rather than traditional edge cuts.   
+
+Key Cutting by Code: Originating a new key using the vehicle's key code, often retrieved via the VIN.   
+
+Key Shell Refurbishment: Replacing a broken or worn-out plastic case or shell while transferring the internal electronics to the new housing.   
+
+Key Fob Battery Replacement: Professional replacement of batteries in remotes and smart keys.   
+
+III. Ignition System and Lock Services
+These services address the mechanical and electronic components within the vehicle itself.
+
+Ignition Switch Repair and Replacement: Fixing or replacing faulty ignition cylinders that are stuck, difficult to turn, or electronically malfunctioning.   
+
+Ignition Rekeying: Changing the internal tumblers of the ignition cylinder to work with a new key, which is often done after keys are stolen.
+
+Car Door Lock Repair and Replacement: Fixing or installing new door and trunk lock cylinders.
+
+Vehicle Rekeying: Changing all vehicle locks (doors, trunk, ignition) to operate with a single new key.
+
+IV. Advanced Electronic Services
+This is where a full-service locksmith's expertise truly stands out, involving work on the vehicle's computer modules.
+
+Transponder Key Programming: Programming the electronic chip inside a key to communicate with the vehicle's immobilizer system, allowing the engine to start.
+
+ECU (Engine Control Unit) Programming: Programming or "flashing" the vehicle's main computer, often necessary when replacing the ECU or in complex all-keys-lost situations.   
+
+Immobilizer Module Programming and Reflashing: Directly interfacing with the car's immobilizer module to add new keys or reset the system (reflashing). This is common for brands like Toyota, Lexus, and Honda.
+
+"Cloning" Keys and Modules: Reading the data from an existing transponder chip or module and writing it to a new one to create a functional duplicate.
+
+Erasing Lost Keys: Accessing the vehicle's computer to remove previously programmed keys from its memory, ensuring stolen keys can no longer start the car.   
+
+Ford/Lincoln Keyless Entry Code Retrieval: Finding the factory-set 5-digit keypad code for vehicles equipped with this feature.   
+
+
+
+
+
+Place,County,State,ZipCode
+Cincinnati,Hamilton,OH,45202
+Cincinnati,Hamilton,OH,45203
+Cincinnati,Hamilton,OH,45204
+Cincinnati,Hamilton,OH,45205
+Cincinnati,Hamilton,OH,45206
+Cincinnati,Hamilton,OH,45207
+Cincinnati,Hamilton,OH,45208
+Cincinnati,Hamilton,OH,45209
+Cincinnati,Hamilton,OH,45211
+Cincinnati,Hamilton,OH,45212
+Cincinnati,Hamilton,OH,45213
+Cincinnati,Hamilton,OH,45214
+Cincinnati,Hamilton,OH,45215
+Cincinnati,Hamilton,OH,45219
+Cincinnati,Hamilton,OH,45220
+Cincinnati,Hamilton,OH,45223
+Cincinnati,Hamilton,OH,45224
+Cincinnati,Hamilton,OH,45225
+Cincinnati,Hamilton,OH,45226
+Cincinnati,Hamilton,OH,45227
+Cincinnati,Hamilton,OH,45229
+Cincinnati,Hamilton,OH,45230
+Cincinnati,Hamilton,OH,45232
+Cincinnati,Hamilton,OH,45238
+Cincinnati,Hamilton,OH,45239
+Green Township,Hamilton,OH,45211
+Green Township,Hamilton,OH,45238
+Green Township,Hamilton,OH,45247
+Green Township,Hamilton,OH,45248
+Colerain Township,Hamilton,OH,45239
+Colerain Township,Hamilton,OH,45251
+Anderson Township,Hamilton,OH,45230
+Anderson Township,Hamilton,OH,45244
+Anderson Township,Hamilton,OH,45255
+Fairfield,Hamilton,OH,45014
+Springfield Township,Hamilton,OH,45224
+Springfield Township,Hamilton,OH,45231
+Springfield Township,Hamilton,OH,45240
+Delhi Township,Hamilton,OH,45233
+Delhi Township,Hamilton,OH,45238
+Sycamore Township,Hamilton,OH,45236
+Sycamore Township,Hamilton,OH,45242
+White Oak,Hamilton,OH,45239
+White Oak,Hamilton,OH,45247
+Norwood,Hamilton,OH,45212
+Forest Park,Hamilton,OH,45240
+Miami Township,Hamilton,OH,45002
+Miami Township,Hamilton,OH,45111
+Symmes Township,Hamilton,OH,45140
+Symmes Township,Hamilton,OH,45242
+Symmes Township,Hamilton,OH,45249
+Bridgetown,Hamilton,OH,45248
+Harrison Township,Hamilton,OH,45030
+Sharonville,Hamilton,OH,45241
+Blue Ash,Hamilton,OH,45242
+Finneytown,Hamilton,OH,45231
+Loveland,Hamilton,OH,45140
+Monfort Heights,Hamilton,OH,45239
+Springdale,Hamilton,OH,45246
+Reading,Hamilton,OH,45215
+Montgomery,Hamilton,OH,45242
+Harrison,Hamilton,OH,45030
+North College Hill,Hamilton,OH,45239
+Wyoming,Hamilton,OH,45215
+Madeira,Hamilton,OH,45243
+Cheviot,Hamilton,OH,45211
+Kenwood,Hamilton,OH,45236
+Milford,Hamilton,OH,45150
+Whitewater Township,Hamilton,OH,45002
+Whitewater Township,Hamilton,OH,45030
+Mount Healthy,Hamilton,OH,45231
+Crosby Township,Hamilton,OH,45002
+Crosby Township,Hamilton,OH,45030
+Indian Hill,Hamilton,OH,45243
+Deer Park,Hamilton,OH,45236
+Columbia Township,Hamilton,OH,45227
+Columbia Township,Hamilton,OH,45243
+St. Bernard,Hamilton,OH,45217
+Woodlawn,Hamilton,OH,45215
+Greenhills,Hamilton,OH,45218
+Golf Manor,Hamilton,OH,45237
+Amberley,Hamilton,OH,45237
+Lockland,Hamilton,OH,45215
+Mariemont,Hamilton,OH,45227
+Lincoln Heights,Hamilton,OH,45215
+Cleves,Hamilton,OH,45002
+Evendale,Hamilton,OH,45241
+Newtown,Hamilton,OH,45244
+Terrace Park,Hamilton,OH,45174
+Elmwood Place,Hamilton,OH,45216
+Glendale,Hamilton,OH,45246
+Fairfax,Hamilton,OH,45227
+North Bend,Hamilton,OH,45052
+Florence,Boone,KY,41042
+Union,Boone,KY,41091
+Walton,Boone,KY,41094
+Burlington,Boone,KY,41005
+Hebron,Boone,KY,41048
+Verona,Boone,KY,41092
+Petersburg,Boone,KY,41080
+Rabbit Hash,Boone,KY,41005
+Oakbrook,Boone,KY,41042
+Belleview,Boone,KY,41005
+Francisville,Boone,KY,41005
+Alexandria,Campbell,KY,41001
+Newport,Campbell,KY,41071
+Bellevue,Campbell,KY,41073
+Cold Spring,Campbell,KY,41076
+Fort Thomas,Campbell,KY,41075
+Highland Heights,Campbell,KY,41076
+Silver Grove,Campbell,KY,41085
+Southgate,Campbell,KY,41071
+Wilder,Campbell,KY,41071
+Dayton,Campbell,KY,41074
+California,Campbell,KY,41007
+Melbourne,Campbell,KY,41059
+Mentor,Campbell,KY,41007
+Crestview,Campbell,KY,41076
+Woodlawn,Campbell,KY,41071
+Claryville,Campbell,KY,41001
+Covington,Kenton,KY,41011
+Covington,Kenton,KY,41012
+Covington,Kenton,KY,41014
+Covington,Kenton,KY,41015
+Covington,Kenton,KY,41016
+Covington,Kenton,KY,41017
+Independence,Kenton,KY,41051
+Erlanger,Kenton,KY,41018
+Edgewood,Kenton,KY,41017
+Fort Mitchell,Kenton,KY,41017
+Villa Hills,Kenton,KY,41017
+Taylor Mill,Kenton,KY,41015
+Fort Wright,Kenton,KY,41011
+Elsmere,Kenton,KY,41018
+Crescent Springs,Kenton,KY,41017
+Ludlow,Kenton,KY,41016
+Park Hills,Kenton,KY,41011
+Crestview Hills,Kenton,KY,41017
+Lakeside Park,Kenton,KY,41017
+Ryland Heights,Kenton,KY,41015
+Kenton Vale,Kenton,KY,41011
+Bromley,Kenton,KY,41016
+Fairview,Kenton,KY,41011
