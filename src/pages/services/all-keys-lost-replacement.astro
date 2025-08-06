@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const pageTitle = 'All Keys Lost Replacement | Locked In Locksmith';
+const pageDescription =
+	"Lost all your car keys? Don't panic. We can create a new set of keys for you on the spot.";
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+	<div class="container my-5">
+		<div class="row">
+			<div class="col-lg-8 mx-auto text-center">
+				<h1 class="display-4">All Keys Lost Replacement</h1>
+				<p class="lead">
+					Losing all your keys is stressful, but we can help. We can create a new set of keys for your vehicle, even if you don't have a spare.
+				</p>
+			</div>
+		</div>
+
+		<div class="row mt-5">
+			<div class="col-lg-12">
+				<h2>Our Process</h2>
+				<p>We can create a new key for your vehicle from scratch, using your vehicle's VIN. We can also program transponder keys and key fobs.</p>
+
+				<h3 class="mt-4">Brands We Service</h3>
+				<p>We can create new keys for all major manufacturers. Click on a brand below to learn more about our specific services for your vehicle.</p>
+				<!-- Add brand links here -->
+
+				<h3 class="mt-4">Frequently Asked Questions</h3>
+				<ul>
+					<li>How long does it take to make a new key?</li>
+					<li>Is it cheaper to get a new key from you than from the dealership?</li>
+					<li>What information do you need from me?</li>
+				</ul>
+
+				<div class="text-center mt-4">
+					<a href="/contact-us" class="btn btn-primary">Get a Free Quote</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</BaseLayout>

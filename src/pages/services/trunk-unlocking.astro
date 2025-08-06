@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const pageTitle = 'Trunk Unlocking | Locked In Locksmith';
+const pageDescription =
+	'Keys locked in your trunk? We can open it for you quickly and without damage. 24/7 service available.';
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+	<div class="container my-5">
+		<div class="row">
+			<div class="col-lg-8 mx-auto text-center">
+				<h1 class="display-4">Trunk Unlocking</h1>
+				<p class="lead">
+					Keys stuck in the trunk? It happens. We'll get it open for you in no time, with no damage to your vehicle.
+				</p>
+			</div>
+		</div>
+
+		<div class="row mt-5">
+			<div class="col-lg-12">
+				<h2>Our Process</h2>
+				<p>Our technicians have the tools and expertise to unlock trunks on all makes and models of vehicles.</p>
+
+				<h3 class="mt-4">Brands We Service</h3>
+				<p>We can unlock trunks from all major manufacturers. Click on a brand below to learn more about our specific services for your vehicle.</p>
+				<!-- Add brand links here -->
+
+				<h3 class="mt-4">Frequently Asked Questions</h3>
+				<ul>
+					<li>Can you open a trunk without the key?</li>
+					<li>How long does it take to unlock a trunk?</li>
+					<li>Is it more difficult to unlock a trunk than a car door?</li>
+				</ul>
+
+				<div class="text-center mt-4">
+					<a href="/contact-us" class="btn btn-primary">Get a Free Quote</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</BaseLayout>

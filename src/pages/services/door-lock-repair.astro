@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const pageTitle = 'Door Lock Repair | Locked In Locksmith';
+const pageDescription =
+	'Is your door lock damaged? We can repair it for you, saving you the cost of a replacement.';
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+	<div class="container my-5">
+		<div class="row">
+			<div class="col-lg-8 mx-auto text-center">
+				<h1 class="display-4">Door Lock Repair</h1>
+				<p class="lead">
+					A damaged door lock can be a major security risk. We can repair your door lock for you, saving you the cost of a replacement.
+				</p>
+			</div>
+		</div>
+
+		<div class="row mt-5">
+			<div class="col-lg-12">
+				<h2>Our Process</h2>
+				<p>We can repair your door lock quickly and easily. We can also replace your door lock if it's beyond repair.</p>
+
+				<h3 class="mt-4">Brands We Service</h3>
+				<p>We can repair door locks for all major manufacturers. Click on a brand below to learn more about our specific services for your vehicle.</p>
+				<!-- Add brand links here -->
+
+				<h3 class="mt-4">Frequently Asked Questions</h3>
+				<ul>
+					<li>How long does it take to repair a door lock?</li>
+					<li>Can you repair a door lock without the original key?</li>
+					<li>Is it cheaper to repair a door lock than to replace it?</li>
+				</ul>
+
+				<div class="text-center mt-4">
+					<a href="/contact-us" class="btn btn-primary">Get a Free Quote</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</BaseLayout>

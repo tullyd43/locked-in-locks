@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const pageTitle = 'Key Cloning | Locked In Locksmith';
+const pageDescription =
+	'Need a spare key? We can clone your existing key quickly and affordably.';
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+	<div class="container my-5">
+		<div class="row">
+			<div class="col-lg-8 mx-auto text-center">
+				<h1 class="display-4">Key Cloning</h1>
+				<p class="lead">
+					Don't wait until you've lost your only key. We can create a high-quality clone of your key in minutes.
+				</p>
+			</div>
+		</div>
+
+		<div class="row mt-5">
+			<div class="col-lg-12">
+				<h2>Our Process</h2>
+				<p>We use state-of-the-art equipment to ensure that your cloned key is a perfect match for your original.</p>
+
+				<h3 class="mt-4">Brands We Service</h3>
+				<p>We can clone keys for all major manufacturers. Click on a brand below to learn more about our specific services for your vehicle.</p>
+				<!-- Add brand links here -->
+
+				<h3 class="mt-4">Frequently Asked Questions</h3>
+				<ul>
+					<li>How long does it take to clone a key?</li>
+					<li>Can you clone a key without the original?</li>
+					<li>Do you clone transponder keys?</li>
+				</ul>
+
+				<div class="text-center mt-4">
+					<a href="/contact-us" class="btn btn-primary">Get a Free Quote</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</BaseLayout>
